@@ -1,17 +1,18 @@
 document.getElementById('expense-form').addEventListener('submit', function (event) {
-  event.preventDefault(); // Prevent form from submitting normally
+  event.preventDefault(); 
 
   var formData = new FormData(event.target);
   var xhr = new XMLHttpRequest();
   xhr.open('POST', 'https://script.google.com/macros/s/AKfycbzHxJpcCy3iyU5PsSM8chDdF-vtnbDhuQl0aeOyjfOj-xiuLwiSag4gucTehIPdfJiE/exec', true);
 
-  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); 
   xhr.onload = function () {
     if (xhr.status === 200) {
-      var formElement = document.getElementById('expense-form');
-      formElement.innerHTML = '<p class="success-message">Expense Added!</p>';
-      formElement.classList.add('expense-added');
+      
+      document.getElementById('expense-form').style.display = 'none';
+      document.querySelector('.success-message').style.display = 'block';
     } else {
+      
       document.getElementById('expense-form').innerHTML = '<p>Something went wrong. Please try again later.</p>';
     }
   };
@@ -19,7 +20,3 @@ document.getElementById('expense-form').addEventListener('submit', function (eve
   var params = new URLSearchParams(formData).toString();
   xhr.send(params);
 });
-
-
-
-
