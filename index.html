@@ -5,15 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahmed Salim &mdash; Expenses</title>
+  <title>Ahmed Salim &mdash; Portfolio</title>
+ 
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
+  <style>
+    head > link[rel="icon"] {
+      border-radius: 50%;
+    }
+  </style>
 
   <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
+    -css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -27,61 +31,917 @@
 
 <body>
 
-
+  <!--
+    - #MAIN
+  -->
 
   <main>
 
-   
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-profile-1.png" alt="Ahmed Salim " width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Ahmed Salim ">Ahmed Salim </h1>
+
+          <p class="title">Data Analyst</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:ahvshim@gmail.com" class="contact-link">ahvshim@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+60 11-6058 7458" class="contact-link">+60 11-6058 7458</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">October 6, 1995</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Pulai, Johore 81300, Johore, Malaysia</address>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="download-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title"></p>
+
+              <address><h4 class="h4 timeline-item-title"><a href="https://drive.google.com/file/d/1br1KzzTa_Es1daOCdUcVBnfpkfESxAWZ/view?usp=share_link" target="_blank"  class="h4 timeline-item-title"><span>Download CV</span></h4> 
+              </address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/ahvshim" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/a.hvshim/" target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/ahmed-salim-b73aa9200/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://wa.link/sxi0m9" target="_blank"  class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
 
     <div class="main-content">
 
-     
+      <!--
+        - #NAVBAR
+      -->
       <nav class="navbar">
 
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>Malaysia-2023</button>
+            <button class="navbar-link  active" data-nav-link>About</button>
           </li>
 
-   
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
 
         </ul>
 
       </nav>
-      
+      <!--
+        - #ABOUT
+      -->
 
       <article class="about  active" data-page="about">
 
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text" style="text-align: justify;">
+          <p>
+            Hi there, my name is Ahmed, 
+            I am an electrical engineer specializing 
+            in software development, with a background 
+            in backend development and distributed systems. 
+             I have narrow experience in designing and implementing resilient, 
+             responsive, scalable, and maintainable systems using C# and .NET. Recently,
+              I made a career transition to focus on data science, and now i'm pursuing a
+               Master's degree in Data Science (Final Semester). I am particularly interested 
+               in machine learning, with a specific emphasis on computer vision, natural language 
+               processing (NLP), data mining, and visual forecasting.
+          </p>
+
+          <p>
+            I am well versed in RDBMS,
+             MongoDB, Python, PowerBI, RapidMiner and Tableau. 
+             I am continually expanding my knowledge and
+              skillset in the field. <br> <br>
+              Last but not least, I am a passionate learner, 
+              sharer, and challenger who embraces open-source principles.
+          </p>
+        </section>
+        <!--
+          - service
+        -->
+        <section class="service">
+
+          <h3 class="h3 service-title">What can I do?</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/trace.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Passion for Data Analysis</h4>
+
+                <p class="service-item-text" style="text-align: justify;">
+                  Since I was young, 
+                  I have always enjoyed to
+                   solve puzzles and playing chess. 
+                    I view large data sets as one big 
+                    puzzle waiting to be solved, and 
+                    finding patterns that others may have
+                     missed is an exciting challenge for me.
+                </p>
+              </div>
+
+            </li> 
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/trace.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Image Classification</h4>
+
+                <p class="service-item-text" style="text-align: justify;">
+                  I am currently developing a deep learning model for 
+                  disease detection in vegetable plants through image 
+                  classification. The project involves leaf segmentation 
+                  & utilizes Convolutional Neural Networks (CNNs) for 
+                  accurate disease identification.
+                </p>
+              </div>
+
+            </li>
+           
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/trace.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Internship</h4>
+
+                <p class="service-item-text" style="text-align: justify;">
+                  Interned at Business Associates as an ICT Product Developer,
+                   gaining practical experience in operations support systems (OSS),
+                    business support systems (BSS), customer and marketing segmentations,
+                     Supply Chain Management, eTOM, and business analysis.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/trace.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Training</h4>
+
+                <p class="service-item-text" style="text-align: justify;">
+                  Trained at Pulse company Ltd in Genex Prob and Genex Assistance software.
+                   Analyzed wireless network performance, drive test data, and collaborated
+                    with planning and optimization teams to enhance network performance. 
+                    Generated reports and visualizations for further investigation and optimization.
+                </p>
+              </div>
+
+            </li>
+            
+
+          </ul>
+        </section>
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+        
+          <ul class="testimonials-list has-scrollbar">
+        
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+        
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/P1.png" alt="Dr. Jake P. Evangelista" width="60" data-testimonials-avatar>
+                </figure>
+        
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Dr. Jake P. Evangelista</h4>
+        
+                <div class="testimonials-text" data-testimonials-text style="text-align: justify;">
+                  <p>
+                    Mr. Ahmed demonstrated a love of learning and the level of commitment necessary
+                    to succeed in college and beyond. I have great respect for him and truly believe that
+                    he is deserving candidate. <br>
+                    Mr. Ahmed has a very positive attitude and truly ebraces learning in the field.
+                    I cannot think of anyone more deserving and I wholehearedly support his applications
+                    <br>
+                    <br>
+                    <a href="mailto:Jev8246@gmail.com" class="contact-link" style="color: gold;">Jev8246@gmail.com</a>
+                    
+                  </p>
+                </div>
+                <br>
+        
+                <time datetime="2021-10-21" data-testimonials-date>21 October, 2021</time>
+        
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+        
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/P1.png" alt="Prof. Dr. El-Tayeb Idris" width="60" data-testimonials-avatar>
+                </figure>
+        
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Prof. Dr. El-Tayeb Idris</h4>
+        
+                <div class="testimonials-text" data-testimonials-text style="text-align: justify;">
+                  <p>
+                    I have known engineer Ahmed Salim during the period 2013-2019. He was one of my students regarding
+                    B.Sc. in Electronics Engineering. Engineer Salim was one of the best eight students in his batch, which
+                    was composed of fifty-six students. <br>
+                    Engineer Salim is a bright young scientist. I strongly nominate him to benefit from any chance to 
+                    improve his engineering profession or pursue a higher degree.
+                    <br>
+                    <br>
+                    <a href="mailto:Profeisa2@gmail.com" class="contact-link" style="color: gold;">Profeisa2@gmail.com</a>
+                  </p>
+                </div>
+                <br>
+        
+                <time datetime="2021-10-06" data-testimonials-date>06 October, 2021</time>
+        
+              </div>
+            </li>
+        
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+        
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/P1.png" alt="Mohammed Fathi Mohammed" width="60" data-testimonials-avatar>
+                </figure>
+        
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Mohammed Fathi</h4>
+        
+                <div class="testimonials-text" data-testimonials-text style="text-align: justify;">
+                  <p>
+                    It is my pleasure to recommend Mr. Ahmed Salim. I have known him for
+                    seven months in my capacity as a General Manager at Scope Contracting
+                    Co. LTD from May to December, 2019. <br>
+                    Salim worked for us on various projects, and based on his work, I would rank
+                    him as one of the best engineers we have ever had. Salim distinguished himself
+                    by hard work and fast learning and ability to work under pressure.
+                    
+                  </p>
+                </div>
+                <br>
+        
+                <time datetime="2019-12-14" data-testimonials-date>14 December, 2019</time>
+        
+              </div>
+            </li>
+        
+            
+          </ul>
+        </section>
+        
+        <div class="modal-container" data-modal-container>
+        
+          <div class="overlay" data-overlay></div>
+        
+          <section class="testimonials-modal">
+        
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+        
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="" width="80" data-modal-img>
+              </figure>
+        
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+        
+            <div class="modal-content">
+        
+              <h4 class="h3 modal-title" data-modal-title></h4>
+        
+              <time datetime="2021-10-23" data-modal-date></time>
+        
+              <div data-modal-text>
+                <p>
+               
+                </p>
+              </div>
+        
+            </div>
+          </section>
+        
+        </div>
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
 
         <header>
-          <h2 class="h2 article-title">Ahmed's Expenses</h2>
+          <h2 class="h2 article-title">Resume</h2>
         </header>
-        <section class="expense-form">
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universiti Teknologi Malaysia</h4>
+
+              <span style="display: inline-block; margin-right: 10px;">Mar 2022 — Present</span><span style="display: inline-block; margin-right: 10px;">|</span><span style="display: inline-block;">Johore, MY</span>
+
+              <p class="timeline-text">
+                Master of Science (Data Science) 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Future Universty</h4>
+
+              <span style="display: inline-block; margin-right: 10px;">2013 — 2019</span><span style="display: inline-block; margin-right: 10px;">|</span><span style="display: inline-block;">Khartoum, SD</span>
+
+
+              <p class="timeline-text">
+                B.Sc. degree with Honours in 
+                Electronics Engineering 
+               
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Product Developer</h4>
+
+              <span>Feb 2021 — Oct 2021</span>
+
+              <p class="timeline-text" style="text-align: justify;">
+                At Business Associates company, I Collaborated with cross-functional teams to analyze organizational challenges
+                 and develop improvement plans. Demonstrated effective communication skills, 
+                 adaptability in remote work, and presented findings using PowerPoint and Miro tools.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Contract Coordinator</h4>
+
+              <span>May 2019 — December 2019</span>
+
+              <p class="timeline-text" style="text-align: justify;">
+                Managed projects and contracts at Scope Contracting company, 
+                ensuring smooth execution, monitoring progress, and maintaining compliance. 
+                Demonstrated strong organizational and communication skills in a dynamic team environment.
+              </p>
+
+            </li>
+
+            <li class="timeline-item" style="text-align: justify;">
+
+              <h4 class="h4 timeline-item-title">Drive Test Analyst</h4>
+
+              <span>Jan 2019 — April 2019</span>
+
+              <p class="timeline-text">
+                Trained as a Drive Test Analyst at Pulse Company Limited, 
+                conducting drive tests and analyzing network performance data
+                 using Huawei Genex Probe and Genex Assistant. Collaborated with 
+                 cross-functional teams to troubleshoot and resolve network issues.
+                  Generated reports and visualizations for further investigation and 
+                  optimization. Stayed updated with the latest technologies and industry standards.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">PowerBI & DAX</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Microsoft Excel, Word & PowerPoint </h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Huawei Genex Probe & Genex Assistant</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python & Markdown</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">SQL & MongoDB</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Smartsheet & Miro</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+            
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">HTML, JavaScript, & CSS </h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #Projects
+      -->
+
+      <article class="projects" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>SQL & MongoDB</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Python</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Microsoft PowerBI</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>RapidMiner</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>SQL & MongoDB</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Python</button>
+              </li>
+
+              
+
+              <li class="select-item">
+                <button data-select-item>Microsoft PowerBI</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>RapidMiner</button>
+              </li>
+              
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="microsoft powerbi">
+              <a href="https://app.powerbi.com/view?r=eyJrIjoiNDUzMWExNjMtYjk2Yy00MDkyLWI0NWMtZWQ4MDk2MzFjMmQ1IiwidCI6IjBlMGRiMmFkLWM0MTYtNDdjNy04OGVjLWNlYWM0ZWU3Njc2NyIsImMiOjEwfQ%3D%3D&pageName=ReportSection119cbe890910b114a415" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/olistProject/Ahmed Hsahim- AA- Dashboard_page-0002.jpg" alt="OLIST-Dashboard" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">OLIST-Dashboard</h3>
+
+                <p class="project-category">Microsoft PowerBI</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="microsoft powerbi">
+              <a href="https://github.com/ahvshim/PowerBI" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/olistProject/Ahmed Hsahim- AA- Dashboard_page-0001.jpg" alt="OLIST-Report" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">OLIST-Report</h3>
+
+                <p class="project-category">Microsoft PowerBI</p>
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="microsoft powerbi">
+              <a href="https://app.powerbi.com/view?r=eyJrIjoiZjYwZjIzODktZGY0Ni00Y2UyLTg0YTItODMzOTZhOTIxYTlmIiwidCI6IjBlMGRiMmFkLWM0MTYtNDdjNy04OGVjLWNlYWM0ZWU3Njc2NyIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf41a13297f1ea9120f47" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/product-customer-sales-dashboards.png" alt="Product-Customer-Sales Dashboard" loading="lazy">
+                </figure>
+                <h3 class="project-title">Product-Customer-Sales Dashboard</h3>
+                <p class="project-category">Microsoft PowerBI</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sql & mongodb">
+              <a href="https://github.com/ahvshim/SQL-Project" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/AW-ERD.jpg" alt="Adventure works relational database Analysis." loading="lazy">
+                </figure>
+                <h3 class="project-title">Adventure works relational database Analysis.</h3>
+                <p class="project-category">SQL</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="python">
+              <a href="https://github.com/ahvshim/Sentiment-Analysis" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/IMDB.jpg" alt="predict the overall sentiment analysis for IMDB movie reviews" loading="lazy">
+                </figure>
+                <h3 class="project-title">predict the overall sentiment analysis for IMDB movie reviews</h3>
+                <p class="project-category">Python</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sql & mongodb">
+              <a href="https://github.com/ahvshim/MongoDb-Project" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/AW-MongoDB.jpg" alt="Adventure works No-SQL document-based database" loading="lazy">
+                </figure>
+                <h3 class="project-title">Adventure works No-SQL document-based database</h3>
+                <p class="project-category">MongoDB Compass</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="python">
+              <a href="https://github.com/ahvshim/Supply_Chain_Analytic" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/Time Series Forecasting Flow Diagram.png" alt="Time Series Forecasting" loading="lazy">
+                </figure>
+                <h3 class="project-title">Time Series Forecasting</h3>
+                <p class="project-category">Python</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="rapidminer">
+              <a href="https://github.com/ahvshim/RapidMiner-Supervised-ML-Models" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/RapidMiner.png" alt="Supervised Machine Learning Models" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Supervised Machine Learning Models</h3>
+
+                <p class="project-category">RapidMiner</p>
+
+              </a>
+            </li>
+
+             <li class="project-item  active" data-filter-item data-category="python">
+              <a href="https://github.com/ahvshim/Customer-Segmentation" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/Monthly Charges Vs Tenure.png" alt="Partition & Density Based Clustering- Unsupervised ML" loading="lazy">
+                </figure>
+                <h3 class="project-title">Partition & Density Based Clustering- Unsupervised ML</h3>
+                <p class="project-category">Python</p>
+              </a>
+            </li>
+          </ul>
+
+        </section>
+      </article>
+
+      <!--
+        - #vontact
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d255255.5598956601!2d103.709627!3d1.544855!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da12c6d36b3a27%3A0xd5f4b21db593d4f5!2sJohor%20Bahru%2C%20Johor!5e0!3m2!1sen!2smy!4v1688864130818!5m2!1sen!2smy"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+
+        <section class="contact-form">
           <h3 class="h3 form-title">Submit Expense</h3>
-          <form action="#" class="form" id="expense-form">
+          <form action="#" class="form" id="contact-form">
             <div class="input-wrapper">
               <input type="number" name="Amount" class="form-input" placeholder="Amount" required>
             </div>
-            <input name="message" class="form-input" placeholder="Expense Type" required list="expense-types">
-            <datalist id="expense-types">
-              <option value="Bus Ticket"></option>
-              <option value="Mcdonald's"></option>
-              <option value="Coffee Shop"></option>
-            </datalist>
+        
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
         
             <button class="form-btn" type="submit">
               <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+              <span>Expensee Added</span>
             </button>
           </form>
         </section>
+
       </article>
     </div>
   </main>
+
   
   <script src="./assets/js/script.js"></script>
 
+  
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
