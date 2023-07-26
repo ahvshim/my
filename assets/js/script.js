@@ -5,7 +5,7 @@ document.getElementById('expense-form').addEventListener('submit', function (eve
 
   var formData = new FormData(event.target);
   var xhr = new XMLHttpRequest();
-  xhr.open('POST', 'https://script.google.com/macros/s/AKfycbxHTGgmR8DP24FepZa8DrgfmZxiamNEtv21fPXTDlVx7l1sWhQt2LZt9YsPkZvEReau/exec', true);
+  xhr.open('POST', 'https://script.google.com/macros/s/AKfycbw23abnPCmOAyBkNbZP2tMUcHN407hUHVU8xpQeKB7lrLCIG0aIuy2bGkY-5BEvmqB2/exec', true);
 
   xhr.setRequestHeader('Expense-Type', 'application/x-www-form-urlencoded');
   xhr.onload = function () {
